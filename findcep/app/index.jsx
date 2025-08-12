@@ -1,6 +1,7 @@
 
-import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
-import {Input} from "../components/input/input.jsx"
+import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import { Botao } from "../components/botao/botao.jsx";
+import { Input } from "../components/input/input.jsx";
 
 export default function Index() {
   return (
@@ -17,18 +18,18 @@ export default function Index() {
 
       {/*2. Campo de consulta*/}
       <View style={styles.container}>
+
         {/*2.1 Título*/}
         <Text style={styles.titulo}>Consulte seu CEP</Text>
-        <Input/>
+        {/*2.2 Input*/}
+        <Input />
+
+        {/*2.3 Botão*/}
+        <Botao tituloBotao = "Me da roblox"/>
 
       </View>
-      {/*2.2 Input*/}
 
-      {/*2.3 Botão*/}
-
-      {/*2.4 Card de informações*/}
-
-    </> //Tag vazia
+    </>
   );
 }
 
